@@ -107,11 +107,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <dd>
               <img src="member_picture/<?php echo h($form['image']) ?>" width="200" height="200" alt="" />
             </dd>
-          </dl>
-          <dl>
             <?php if ($form['image'] == $first_image) : ?>
               <dd class="error">* 画像が未設定の場合は上記画像が設定されます</dd>
             <?php endif; ?>
+          </dl>
+          <dl>
             <dt>年齢</dt>
             <dd><?php echo h($form['age']) ?></dd>
             <dt>趣味</dt>
